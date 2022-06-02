@@ -1,6 +1,3 @@
-def d1(a, b):
-    print("Result : ", a * b)
-
-
-print("Name : taukir Shekh")
-d1(10, 3)
+print(10 * 20)
+print('Result : ',20 * 30)
+print("Owner : Taukir Shekh")
