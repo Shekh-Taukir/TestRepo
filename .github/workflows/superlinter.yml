@@ -11,7 +11,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp://103.86.176.224
+        server: test.dhartimaa.co.in
         username: jarvis
         password: Tony@stark@47
         protocol: ftp
