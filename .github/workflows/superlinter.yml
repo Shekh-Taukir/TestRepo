@@ -18,13 +18,3 @@ jobs:
       uses : github/super-linter@v3.17.0
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
-    - name: Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        server: test.dhartimaa.co.in
-        username: jarvis
-        protocol: ftp
-        host : ftp.103.86.176.224
-        port : 21
-        password: ${{ secrets.ftp_password }}
