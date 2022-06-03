@@ -11,7 +11,7 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp://65.0.26.0
-        username: optimusprime
-        # password: Hello123
-        password: ${{ secrets.ftp_password }}
+        server: ftp://103.86.176.224
+        username: jarvis
+        password: Tony@stark@47
+        # password: ${{ secrets.ftp_password }}
