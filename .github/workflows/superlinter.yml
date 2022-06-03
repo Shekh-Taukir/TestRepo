@@ -30,6 +30,6 @@ jobs:
         username: jarvis
         password: Tony@stark@47
         protocol: ftp
-        # host : ftp.103.86.176.224
+        host : ftp.103.86.176.224
         port : 21
-        # password: ${{ secrets.ftp_password }}
+        password: ${{ secrets.ftp_password }}
