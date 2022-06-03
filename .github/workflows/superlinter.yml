@@ -14,8 +14,8 @@ jobs:
         DEFAULT_BRANCH: dev1
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         
-    - name: Get latest code
-      uses: actions/checkout@v2
+    # - name: Get latest code
+    #   uses: actions/checkout@v2
     
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
