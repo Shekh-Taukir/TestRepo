@@ -1,4 +1,4 @@
-name: Deploy website on push
+name: Check for Error and then deploy it
 on: push
 jobs:
   super-lint:
@@ -13,3 +13,17 @@ jobs:
       env :
         DEFAULT_BRANCH: dev1
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Get latest code
+      uses: actions/checkout@v2
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: test.dhartimaa.co.in
+        username: jarvis
+        password: Tony@stark@47
+        protocol: ftp
+        # host : ftp.103.86.176.224
+        port : 21
+        # password: ${{ secrets.ftp_password }}
