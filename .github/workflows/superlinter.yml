@@ -11,9 +11,10 @@ jobs:
     - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: ftp://103.86.176.224/
+        server: ftp://103.86.176.224
         username: jarvis
         password: Tony@stark@47
-        host : ftp.103.86.176.224
+        protocol: ftp
+        # host : ftp.103.86.176.224
         port : 21
         # password: ${{ secrets.ftp_password }}
